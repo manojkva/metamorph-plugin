@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package proto;
+
+message Empty {}
+
+message Response {
+    bytes value = 1;
+
+}
+
+service redfish {
+  rpc DeployISO(Empty) returns (Empty);
+  rpc UpdateFirmware(Empty) returns (Empty);
+  rpc ConfigureRAID(Empty) returns (Empty);
+  rpc GetGUUID(Empty) returns (Response);
+
+}
+
+service isogen {
+  rpc CreateISO(Empty) returns (Response);
+}
