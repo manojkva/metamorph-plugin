@@ -1,4 +1,4 @@
-package common
+package redfish
 
 import (
 	"github.com/manojkva/metamorph-plugin/proto"

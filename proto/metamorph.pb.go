@@ -133,11 +133,10 @@ var file_proto_metamorph_proto_rawDesc = []byte{
 	0x6f, 0x74, 0x6f, 0x2e, 0x45, 0x6d, 0x70, 0x74, 0x79, 0x12, 0x29, 0x0a, 0x08, 0x47, 0x65, 0x74,
 	0x47, 0x55, 0x55, 0x49, 0x44, 0x12, 0x0c, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x2e, 0x45, 0x6d,
 	0x70, 0x74, 0x79, 0x1a, 0x0f, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x2e, 0x52, 0x65, 0x73, 0x70,
-	0x6f, 0x6e, 0x73, 0x65, 0x32, 0x34, 0x0a, 0x06, 0x69, 0x73, 0x6f, 0x67, 0x65, 0x6e, 0x12, 0x2a,
+	0x6f, 0x6e, 0x73, 0x65, 0x32, 0x31, 0x0a, 0x06, 0x69, 0x73, 0x6f, 0x67, 0x65, 0x6e, 0x12, 0x27,
 	0x0a, 0x09, 0x43, 0x72, 0x65, 0x61, 0x74, 0x65, 0x49, 0x53, 0x4f, 0x12, 0x0c, 0x2e, 0x70, 0x72,
-	0x6f, 0x74, 0x6f, 0x2e, 0x45, 0x6d, 0x70, 0x74, 0x79, 0x1a, 0x0f, 0x2e, 0x70, 0x72, 0x6f, 0x74,
-	0x6f, 0x2e, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74,
-	0x6f, 0x33,
+	0x6f, 0x74, 0x6f, 0x2e, 0x45, 0x6d, 0x70, 0x74, 0x79, 0x1a, 0x0c, 0x2e, 0x70, 0x72, 0x6f, 0x74,
+	0x6f, 0x2e, 0x45, 0x6d, 0x70, 0x74, 0x79, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
 }
 
 var (
@@ -167,7 +166,7 @@ var file_proto_metamorph_proto_depIdxs = []int32{
 	0, // 6: proto.redfish.UpdateFirmware:output_type -> proto.Empty
 	0, // 7: proto.redfish.ConfigureRAID:output_type -> proto.Empty
 	1, // 8: proto.redfish.GetGUUID:output_type -> proto.Response
-	1, // 9: proto.isogen.CreateISO:output_type -> proto.Response
+	0, // 9: proto.isogen.CreateISO:output_type -> proto.Empty
 	5, // [5:10] is the sub-list for method output_type
 	0, // [0:5] is the sub-list for method input_type
 	0, // [0:0] is the sub-list for extension type_name
@@ -418,7 +417,7 @@ var _Redfish_serviceDesc = grpc.ServiceDesc{
 //
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/google.golang.org/grpc#ClientConn.NewStream.
 type IsogenClient interface {
-	CreateISO(ctx context.Context, in *Empty, opts ...grpc.CallOption) (*Response, error)
+	CreateISO(ctx context.Context, in *Empty, opts ...grpc.CallOption) (*Empty, error)
 }
 
 type isogenClient struct {
@@ -429,8 +428,8 @@ func NewIsogenClient(cc grpc.ClientConnInterface) IsogenClient {
 	return &isogenClient{cc}
 }
 
-func (c *isogenClient) CreateISO(ctx context.Context, in *Empty, opts ...grpc.CallOption) (*Response, error) {
-	out := new(Response)
+func (c *isogenClient) CreateISO(ctx context.Context, in *Empty, opts ...grpc.CallOption) (*Empty, error) {
+	out := new(Empty)
 	err := c.cc.Invoke(ctx, "/proto.isogen/CreateISO", in, out, opts...)
 	if err != nil {
 		return nil, err
@@ -440,14 +439,14 @@ func (c *isogenClient) CreateISO(ctx context.Context, in *Empty, opts ...grpc.Ca
 
 // IsogenServer is the server API for Isogen service.
 type IsogenServer interface {
-	CreateISO(context.Context, *Empty) (*Response, error)
+	CreateISO(context.Context, *Empty) (*Empty, error)
 }
 
 // UnimplementedIsogenServer can be embedded to have forward compatible implementations.
 type UnimplementedIsogenServer struct {
 }
 
-func (*UnimplementedIsogenServer) CreateISO(context.Context, *Empty) (*Response, error) {
+func (*UnimplementedIsogenServer) CreateISO(context.Context, *Empty) (*Empty, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method CreateISO not implemented")
 }
 

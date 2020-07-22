@@ -18,5 +18,5 @@ service redfish {
 }
 
 service isogen {
-  rpc CreateISO(Empty) returns (Response);
+  rpc CreateISO(Empty) returns (Empty);
 }

@@ -14,11 +14,11 @@ var Handshake = plugin.HandshakeConfig{
 }
 
 var PluginMap = map[string]plugin.Plugin{
-	"isogen": &RedfishPlugin{},
+	"isogen": &ISOgenPlugin{},
 }
 
 type ISOgen interface {
-	PrepareISO()  (error)
+	CreateISO()  (error)
 }
 
 type ISOgenPlugin struct {

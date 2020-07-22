@@ -1,4 +1,4 @@
-package common
+package isogen
 
 import (
 	"github.com/manojkva/metamorph-plugin/proto"
@@ -8,16 +8,17 @@ import (
 type GRPCClient struct{ client proto.IsogenClient }
 
 
-func (m *GRPCClient)  PrepareISO() error {
-	 return nil
+func (m *GRPCClient)  CreateISO() error {
+	_, err := m.client.CreateISO(context.Background(), &proto.Empty{})
+	 return  err
 }
 
 type GRPCServer struct {
 	Impl ISOgen
 }
 
-}
-func (m *GRPCServer)  PrepareISO(ctx context.Context, req *proto.Empty) (*proto.Empty,error) {
+func (m *GRPCServer)  CreateISO(ctx context.Context, req *proto.Empty) (*proto.Empty,error) {
 	/* <TBD> Add check for required parameters and raise necessary errors if reqd*/
-	 return nil,nil
+	 err :=  m.Impl.CreateISO()
+	 return nil,err
 }
