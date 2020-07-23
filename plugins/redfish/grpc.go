@@ -41,15 +41,15 @@ func (m *GRPCServer) GetGUUID(ctx context.Context, req *proto.Empty) (*proto.Res
 func (m *GRPCServer) UpdateFirmware(ctx context.Context, req *proto.Empty) (*proto.Empty, error) {
 	/* <TBD> Add check for required parameters and raise necessary errors if reqd*/
 	err := m.Impl.UpdateFirmware()
-	return nil, err
+	return &proto.Empty{}, err
 }
 func (m *GRPCServer) ConfigureRAID(ctx context.Context, req *proto.Empty) (*proto.Empty, error) {
 	/* <TBD> Add check for required parameters and raise necessary errors if reqd*/
 	err := m.Impl.ConfigureRAID()
-	return nil, err
+	return &proto.Empty{}, err
 }
 func (m *GRPCServer) DeployISO(ctx context.Context, req *proto.Empty) (*proto.Empty, error) {
 	/* <TBD> Add check for required parameters and raise necessary errors if reqd*/
 	err := m.Impl.DeployISO()
-	return nil, err
+	return &proto.Empty{}, err
 }

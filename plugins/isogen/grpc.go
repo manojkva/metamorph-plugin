@@ -20,5 +20,5 @@ type GRPCServer struct {
 func (m *GRPCServer)  CreateISO(ctx context.Context, req *proto.Empty) (*proto.Empty,error) {
 	/* <TBD> Add check for required parameters and raise necessary errors if reqd*/
 	 err :=  m.Impl.CreateISO()
-	 return nil,err
+	 return &proto.Empty{},err
 }
