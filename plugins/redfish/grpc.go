@@ -16,14 +16,17 @@ func (m *GRPCClient) GetGUUID() ([]byte, error) {
 	return resp.Value, nil
 }
 
-func (m *GRPCClient)  UpdateFirmware() error {
-	 return nil
+func (m *GRPCClient) UpdateFirmware() error {
+	_, err := m.client.UpdateFirmware(context.Background(), &proto.Empty{})
+	return err
 }
-func (m *GRPCClient)  ConfigureRAID() error {
-	 return nil
+func (m *GRPCClient) ConfigureRAID() error {
+	_, err := m.client.ConfigureRAID(context.Background(), &proto.Empty{})
+	return err
 }
-func (m *GRPCClient)  DeployISO() error {
-	 return nil
+func (m *GRPCClient) DeployISO() error {
+	_, err := m.client.DeployISO(context.Background(), &proto.Empty{})
+	return err
 }
 
 type GRPCServer struct {
@@ -35,15 +38,18 @@ func (m *GRPCServer) GetGUUID(ctx context.Context, req *proto.Empty) (*proto.Res
 	v, err := m.Impl.GetGUUID()
 	return &proto.Response{Value: v}, err
 }
-func (m *GRPCServer)  UpdateFirmware(ctx context.Context, req *proto.Empty) (*proto.Empty,error) {
+func (m *GRPCServer) UpdateFirmware(ctx context.Context, req *proto.Empty) (*proto.Empty, error) {
 	/* <TBD> Add check for required parameters and raise necessary errors if reqd*/
-	 return nil,nil
+	err := m.Impl.UpdateFirmware()
+	return nil, err
 }
-func (m *GRPCServer)  ConfigureRAID(ctx context.Context, req *proto.Empty) (*proto.Empty,error) {
+func (m *GRPCServer) ConfigureRAID(ctx context.Context, req *proto.Empty) (*proto.Empty, error) {
 	/* <TBD> Add check for required parameters and raise necessary errors if reqd*/
-	 return nil,nil
+	err := m.Impl.ConfigureRAID()
+	return nil, err
 }
-func (m *GRPCServer)  DeployISO(ctx context.Context, req *proto.Empty) (*proto.Empty,error) {
+func (m *GRPCServer) DeployISO(ctx context.Context, req *proto.Empty) (*proto.Empty, error) {
 	/* <TBD> Add check for required parameters and raise necessary errors if reqd*/
-	 return nil,nil
+	err := m.Impl.DeployISO()
+	return nil, err
 }
