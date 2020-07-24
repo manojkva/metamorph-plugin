@@ -1,11 +1,11 @@
-package redfish
+package bmh
 
 import (
 	"github.com/manojkva/metamorph-plugin/proto"
 	"golang.org/x/net/context"
 )
 
-type GRPCClient struct{ client proto.RedfishClient }
+type GRPCClient struct{ client proto.BmhClient }
 
 func (m *GRPCClient) GetGUUID() ([]byte, error) {
 	resp, err := m.client.GetGUUID(context.Background(), &proto.Empty{})
@@ -30,7 +30,7 @@ func (m *GRPCClient) DeployISO() error {
 }
 
 type GRPCServer struct {
-	Impl Redfish
+	Impl Bmh 
 }
 
 func (m *GRPCServer) GetGUUID(ctx context.Context, req *proto.Empty) (*proto.Response, error) {

@@ -121,22 +121,22 @@ var file_proto_metamorph_proto_rawDesc = []byte{
 	0x68, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x12, 0x05, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x22, 0x07,
 	0x0a, 0x05, 0x45, 0x6d, 0x70, 0x74, 0x79, 0x22, 0x20, 0x0a, 0x08, 0x52, 0x65, 0x73, 0x70, 0x6f,
 	0x6e, 0x73, 0x65, 0x12, 0x14, 0x0a, 0x05, 0x76, 0x61, 0x6c, 0x75, 0x65, 0x18, 0x01, 0x20, 0x01,
-	0x28, 0x0c, 0x52, 0x05, 0x76, 0x61, 0x6c, 0x75, 0x65, 0x32, 0xb8, 0x01, 0x0a, 0x07, 0x72, 0x65,
-	0x64, 0x66, 0x69, 0x73, 0x68, 0x12, 0x27, 0x0a, 0x09, 0x44, 0x65, 0x70, 0x6c, 0x6f, 0x79, 0x49,
-	0x53, 0x4f, 0x12, 0x0c, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x2e, 0x45, 0x6d, 0x70, 0x74, 0x79,
-	0x1a, 0x0c, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x2e, 0x45, 0x6d, 0x70, 0x74, 0x79, 0x12, 0x2c,
-	0x0a, 0x0e, 0x55, 0x70, 0x64, 0x61, 0x74, 0x65, 0x46, 0x69, 0x72, 0x6d, 0x77, 0x61, 0x72, 0x65,
-	0x12, 0x0c, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x2e, 0x45, 0x6d, 0x70, 0x74, 0x79, 0x1a, 0x0c,
-	0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x2e, 0x45, 0x6d, 0x70, 0x74, 0x79, 0x12, 0x2b, 0x0a, 0x0d,
-	0x43, 0x6f, 0x6e, 0x66, 0x69, 0x67, 0x75, 0x72, 0x65, 0x52, 0x41, 0x49, 0x44, 0x12, 0x0c, 0x2e,
-	0x70, 0x72, 0x6f, 0x74, 0x6f, 0x2e, 0x45, 0x6d, 0x70, 0x74, 0x79, 0x1a, 0x0c, 0x2e, 0x70, 0x72,
-	0x6f, 0x74, 0x6f, 0x2e, 0x45, 0x6d, 0x70, 0x74, 0x79, 0x12, 0x29, 0x0a, 0x08, 0x47, 0x65, 0x74,
-	0x47, 0x55, 0x55, 0x49, 0x44, 0x12, 0x0c, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x2e, 0x45, 0x6d,
-	0x70, 0x74, 0x79, 0x1a, 0x0f, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x2e, 0x52, 0x65, 0x73, 0x70,
-	0x6f, 0x6e, 0x73, 0x65, 0x32, 0x31, 0x0a, 0x06, 0x69, 0x73, 0x6f, 0x67, 0x65, 0x6e, 0x12, 0x27,
-	0x0a, 0x09, 0x43, 0x72, 0x65, 0x61, 0x74, 0x65, 0x49, 0x53, 0x4f, 0x12, 0x0c, 0x2e, 0x70, 0x72,
-	0x6f, 0x74, 0x6f, 0x2e, 0x45, 0x6d, 0x70, 0x74, 0x79, 0x1a, 0x0c, 0x2e, 0x70, 0x72, 0x6f, 0x74,
-	0x6f, 0x2e, 0x45, 0x6d, 0x70, 0x74, 0x79, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
+	0x28, 0x0c, 0x52, 0x05, 0x76, 0x61, 0x6c, 0x75, 0x65, 0x32, 0xb4, 0x01, 0x0a, 0x03, 0x62, 0x6d,
+	0x68, 0x12, 0x27, 0x0a, 0x09, 0x44, 0x65, 0x70, 0x6c, 0x6f, 0x79, 0x49, 0x53, 0x4f, 0x12, 0x0c,
+	0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x2e, 0x45, 0x6d, 0x70, 0x74, 0x79, 0x1a, 0x0c, 0x2e, 0x70,
+	0x72, 0x6f, 0x74, 0x6f, 0x2e, 0x45, 0x6d, 0x70, 0x74, 0x79, 0x12, 0x2c, 0x0a, 0x0e, 0x55, 0x70,
+	0x64, 0x61, 0x74, 0x65, 0x46, 0x69, 0x72, 0x6d, 0x77, 0x61, 0x72, 0x65, 0x12, 0x0c, 0x2e, 0x70,
+	0x72, 0x6f, 0x74, 0x6f, 0x2e, 0x45, 0x6d, 0x70, 0x74, 0x79, 0x1a, 0x0c, 0x2e, 0x70, 0x72, 0x6f,
+	0x74, 0x6f, 0x2e, 0x45, 0x6d, 0x70, 0x74, 0x79, 0x12, 0x2b, 0x0a, 0x0d, 0x43, 0x6f, 0x6e, 0x66,
+	0x69, 0x67, 0x75, 0x72, 0x65, 0x52, 0x41, 0x49, 0x44, 0x12, 0x0c, 0x2e, 0x70, 0x72, 0x6f, 0x74,
+	0x6f, 0x2e, 0x45, 0x6d, 0x70, 0x74, 0x79, 0x1a, 0x0c, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x2e,
+	0x45, 0x6d, 0x70, 0x74, 0x79, 0x12, 0x29, 0x0a, 0x08, 0x47, 0x65, 0x74, 0x47, 0x55, 0x55, 0x49,
+	0x44, 0x12, 0x0c, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x2e, 0x45, 0x6d, 0x70, 0x74, 0x79, 0x1a,
+	0x0f, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x2e, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65,
+	0x32, 0x31, 0x0a, 0x06, 0x69, 0x73, 0x6f, 0x67, 0x65, 0x6e, 0x12, 0x27, 0x0a, 0x09, 0x43, 0x72,
+	0x65, 0x61, 0x74, 0x65, 0x49, 0x53, 0x4f, 0x12, 0x0c, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x2e,
+	0x45, 0x6d, 0x70, 0x74, 0x79, 0x1a, 0x0c, 0x2e, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x2e, 0x45, 0x6d,
+	0x70, 0x74, 0x79, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
 }
 
 var (
@@ -157,15 +157,15 @@ var file_proto_metamorph_proto_goTypes = []interface{}{
 	(*Response)(nil), // 1: proto.Response
 }
 var file_proto_metamorph_proto_depIdxs = []int32{
-	0, // 0: proto.redfish.DeployISO:input_type -> proto.Empty
-	0, // 1: proto.redfish.UpdateFirmware:input_type -> proto.Empty
-	0, // 2: proto.redfish.ConfigureRAID:input_type -> proto.Empty
-	0, // 3: proto.redfish.GetGUUID:input_type -> proto.Empty
+	0, // 0: proto.bmh.DeployISO:input_type -> proto.Empty
+	0, // 1: proto.bmh.UpdateFirmware:input_type -> proto.Empty
+	0, // 2: proto.bmh.ConfigureRAID:input_type -> proto.Empty
+	0, // 3: proto.bmh.GetGUUID:input_type -> proto.Empty
 	0, // 4: proto.isogen.CreateISO:input_type -> proto.Empty
-	0, // 5: proto.redfish.DeployISO:output_type -> proto.Empty
-	0, // 6: proto.redfish.UpdateFirmware:output_type -> proto.Empty
-	0, // 7: proto.redfish.ConfigureRAID:output_type -> proto.Empty
-	1, // 8: proto.redfish.GetGUUID:output_type -> proto.Response
+	0, // 5: proto.bmh.DeployISO:output_type -> proto.Empty
+	0, // 6: proto.bmh.UpdateFirmware:output_type -> proto.Empty
+	0, // 7: proto.bmh.ConfigureRAID:output_type -> proto.Empty
+	1, // 8: proto.bmh.GetGUUID:output_type -> proto.Response
 	0, // 9: proto.isogen.CreateISO:output_type -> proto.Empty
 	5, // [5:10] is the sub-list for method output_type
 	0, // [0:5] is the sub-list for method input_type
@@ -233,180 +233,180 @@ var _ grpc.ClientConnInterface
 // is compatible with the grpc package it is being compiled against.
 const _ = grpc.SupportPackageIsVersion6
 
-// RedfishClient is the client API for Redfish service.
+// BmhClient is the client API for Bmh service.
 //
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/google.golang.org/grpc#ClientConn.NewStream.
-type RedfishClient interface {
+type BmhClient interface {
 	DeployISO(ctx context.Context, in *Empty, opts ...grpc.CallOption) (*Empty, error)
 	UpdateFirmware(ctx context.Context, in *Empty, opts ...grpc.CallOption) (*Empty, error)
 	ConfigureRAID(ctx context.Context, in *Empty, opts ...grpc.CallOption) (*Empty, error)
 	GetGUUID(ctx context.Context, in *Empty, opts ...grpc.CallOption) (*Response, error)
 }
 
-type redfishClient struct {
+type bmhClient struct {
 	cc grpc.ClientConnInterface
 }
 
-func NewRedfishClient(cc grpc.ClientConnInterface) RedfishClient {
-	return &redfishClient{cc}
+func NewBmhClient(cc grpc.ClientConnInterface) BmhClient {
+	return &bmhClient{cc}
 }
 
-func (c *redfishClient) DeployISO(ctx context.Context, in *Empty, opts ...grpc.CallOption) (*Empty, error) {
+func (c *bmhClient) DeployISO(ctx context.Context, in *Empty, opts ...grpc.CallOption) (*Empty, error) {
 	out := new(Empty)
-	err := c.cc.Invoke(ctx, "/proto.redfish/DeployISO", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/proto.bmh/DeployISO", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
 	return out, nil
 }
 
-func (c *redfishClient) UpdateFirmware(ctx context.Context, in *Empty, opts ...grpc.CallOption) (*Empty, error) {
+func (c *bmhClient) UpdateFirmware(ctx context.Context, in *Empty, opts ...grpc.CallOption) (*Empty, error) {
 	out := new(Empty)
-	err := c.cc.Invoke(ctx, "/proto.redfish/UpdateFirmware", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/proto.bmh/UpdateFirmware", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
 	return out, nil
 }
 
-func (c *redfishClient) ConfigureRAID(ctx context.Context, in *Empty, opts ...grpc.CallOption) (*Empty, error) {
+func (c *bmhClient) ConfigureRAID(ctx context.Context, in *Empty, opts ...grpc.CallOption) (*Empty, error) {
 	out := new(Empty)
-	err := c.cc.Invoke(ctx, "/proto.redfish/ConfigureRAID", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/proto.bmh/ConfigureRAID", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
 	return out, nil
 }
 
-func (c *redfishClient) GetGUUID(ctx context.Context, in *Empty, opts ...grpc.CallOption) (*Response, error) {
+func (c *bmhClient) GetGUUID(ctx context.Context, in *Empty, opts ...grpc.CallOption) (*Response, error) {
 	out := new(Response)
-	err := c.cc.Invoke(ctx, "/proto.redfish/GetGUUID", in, out, opts...)
+	err := c.cc.Invoke(ctx, "/proto.bmh/GetGUUID", in, out, opts...)
 	if err != nil {
 		return nil, err
 	}
 	return out, nil
 }
 
-// RedfishServer is the server API for Redfish service.
-type RedfishServer interface {
+// BmhServer is the server API for Bmh service.
+type BmhServer interface {
 	DeployISO(context.Context, *Empty) (*Empty, error)
 	UpdateFirmware(context.Context, *Empty) (*Empty, error)
 	ConfigureRAID(context.Context, *Empty) (*Empty, error)
 	GetGUUID(context.Context, *Empty) (*Response, error)
 }
 
-// UnimplementedRedfishServer can be embedded to have forward compatible implementations.
-type UnimplementedRedfishServer struct {
+// UnimplementedBmhServer can be embedded to have forward compatible implementations.
+type UnimplementedBmhServer struct {
 }
 
-func (*UnimplementedRedfishServer) DeployISO(context.Context, *Empty) (*Empty, error) {
+func (*UnimplementedBmhServer) DeployISO(context.Context, *Empty) (*Empty, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method DeployISO not implemented")
 }
-func (*UnimplementedRedfishServer) UpdateFirmware(context.Context, *Empty) (*Empty, error) {
+func (*UnimplementedBmhServer) UpdateFirmware(context.Context, *Empty) (*Empty, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method UpdateFirmware not implemented")
 }
-func (*UnimplementedRedfishServer) ConfigureRAID(context.Context, *Empty) (*Empty, error) {
+func (*UnimplementedBmhServer) ConfigureRAID(context.Context, *Empty) (*Empty, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method ConfigureRAID not implemented")
 }
-func (*UnimplementedRedfishServer) GetGUUID(context.Context, *Empty) (*Response, error) {
+func (*UnimplementedBmhServer) GetGUUID(context.Context, *Empty) (*Response, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetGUUID not implemented")
 }
 
-func RegisterRedfishServer(s *grpc.Server, srv RedfishServer) {
-	s.RegisterService(&_Redfish_serviceDesc, srv)
+func RegisterBmhServer(s *grpc.Server, srv BmhServer) {
+	s.RegisterService(&_Bmh_serviceDesc, srv)
 }
 
-func _Redfish_DeployISO_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+func _Bmh_DeployISO_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
 	in := new(Empty)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
 	if interceptor == nil {
-		return srv.(RedfishServer).DeployISO(ctx, in)
+		return srv.(BmhServer).DeployISO(ctx, in)
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/proto.redfish/DeployISO",
+		FullMethod: "/proto.bmh/DeployISO",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(RedfishServer).DeployISO(ctx, req.(*Empty))
+		return srv.(BmhServer).DeployISO(ctx, req.(*Empty))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
-func _Redfish_UpdateFirmware_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+func _Bmh_UpdateFirmware_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
 	in := new(Empty)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
 	if interceptor == nil {
-		return srv.(RedfishServer).UpdateFirmware(ctx, in)
+		return srv.(BmhServer).UpdateFirmware(ctx, in)
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/proto.redfish/UpdateFirmware",
+		FullMethod: "/proto.bmh/UpdateFirmware",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(RedfishServer).UpdateFirmware(ctx, req.(*Empty))
+		return srv.(BmhServer).UpdateFirmware(ctx, req.(*Empty))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
-func _Redfish_ConfigureRAID_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+func _Bmh_ConfigureRAID_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
 	in := new(Empty)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
 	if interceptor == nil {
-		return srv.(RedfishServer).ConfigureRAID(ctx, in)
+		return srv.(BmhServer).ConfigureRAID(ctx, in)
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/proto.redfish/ConfigureRAID",
+		FullMethod: "/proto.bmh/ConfigureRAID",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(RedfishServer).ConfigureRAID(ctx, req.(*Empty))
+		return srv.(BmhServer).ConfigureRAID(ctx, req.(*Empty))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
-func _Redfish_GetGUUID_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+func _Bmh_GetGUUID_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
 	in := new(Empty)
 	if err := dec(in); err != nil {
 		return nil, err
 	}
 	if interceptor == nil {
-		return srv.(RedfishServer).GetGUUID(ctx, in)
+		return srv.(BmhServer).GetGUUID(ctx, in)
 	}
 	info := &grpc.UnaryServerInfo{
 		Server:     srv,
-		FullMethod: "/proto.redfish/GetGUUID",
+		FullMethod: "/proto.bmh/GetGUUID",
 	}
 	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
-		return srv.(RedfishServer).GetGUUID(ctx, req.(*Empty))
+		return srv.(BmhServer).GetGUUID(ctx, req.(*Empty))
 	}
 	return interceptor(ctx, in, info, handler)
 }
 
-var _Redfish_serviceDesc = grpc.ServiceDesc{
-	ServiceName: "proto.redfish",
-	HandlerType: (*RedfishServer)(nil),
+var _Bmh_serviceDesc = grpc.ServiceDesc{
+	ServiceName: "proto.bmh",
+	HandlerType: (*BmhServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{
 			MethodName: "DeployISO",
-			Handler:    _Redfish_DeployISO_Handler,
+			Handler:    _Bmh_DeployISO_Handler,
 		},
 		{
 			MethodName: "UpdateFirmware",
-			Handler:    _Redfish_UpdateFirmware_Handler,
+			Handler:    _Bmh_UpdateFirmware_Handler,
 		},
 		{
 			MethodName: "ConfigureRAID",
-			Handler:    _Redfish_ConfigureRAID_Handler,
+			Handler:    _Bmh_ConfigureRAID_Handler,
 		},
 		{
 			MethodName: "GetGUUID",
-			Handler:    _Redfish_GetGUUID_Handler,
+			Handler:    _Bmh_GetGUUID_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},

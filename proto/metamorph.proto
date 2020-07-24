@@ -9,7 +9,7 @@ message Response {
 
 }
 
-service redfish {
+service bmh {
   rpc DeployISO(Empty) returns (Empty);
   rpc UpdateFirmware(Empty) returns (Empty);
   rpc ConfigureRAID(Empty) returns (Empty);
