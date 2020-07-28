@@ -22,6 +22,10 @@ type Bmh interface {
 	DeployISO() (error)
 	UpdateFirmware() (error)
 	ConfigureRAID()  (error)
+	GetHWInventory() (map[string]string, error)
+	PowerOff()  (error)
+	PowerOn()   (error)
+	GetPowerStatus()(bool)
 }
 
 type BmhPlugin struct {
