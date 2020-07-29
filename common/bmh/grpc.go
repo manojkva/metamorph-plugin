@@ -49,10 +49,10 @@ type GRPCServer struct {
 	Impl Bmh
 }
 
-func (m *GRPCServer) GetGUUID(ctx context.Context, req *proto.Empty) (*proto.Response, error) {
+func (m *GRPCServer) GetGUUID(ctx context.Context, req *proto.Empty) (*proto.ResponseByte, error) {
 	/* <TBD> Add check for required parameters and raise necessary errors if reqd*/
 	v, err := m.Impl.GetGUUID()
-	return &proto.Response{Value: v}, err
+	return &proto.ResponseByte{Value: v}, err
 }
 func (m *GRPCServer) GetPowerStatus(ctx context.Context, req *proto.Empty) (*proto.ResponseBool, error) {
 	/* <TBD> Add check for required parameters and raise necessary errors if reqd*/
