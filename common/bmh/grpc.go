@@ -17,7 +17,7 @@ func (m *GRPCClient) GetGUUID() ([]byte, error) {
 }
 func (m *GRPCClient) GetPowerStatus() (bool, error) {
 	resp, err := m.client.GetPowerStatus(context.Background(), &proto.Empty{})
-	return resp.Status, err 
+	return resp.Status, err
 }
 
 func (m *GRPCClient) UpdateFirmware() error {
@@ -56,8 +56,8 @@ func (m *GRPCServer) GetGUUID(ctx context.Context, req *proto.Empty) (*proto.Res
 }
 func (m *GRPCServer) GetPowerStatus(ctx context.Context, req *proto.Empty) (*proto.ResponseBool, error) {
 	/* <TBD> Add check for required parameters and raise necessary errors if reqd*/
-	s := m.Impl.GetPowerStatus()
-	return &proto.ResponseBool{Status: s},nil
+	s,err := m.Impl.GetPowerStatus()
+	return &proto.ResponseBool{Status: s},err
 }
 func (m *GRPCServer) UpdateFirmware(ctx context.Context, req *proto.Empty) (*proto.Empty, error) {
 	/* <TBD> Add check for required parameters and raise necessary errors if reqd*/

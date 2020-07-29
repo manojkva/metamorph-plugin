@@ -25,7 +25,7 @@ type Bmh interface {
 	GetHWInventory() (map[string]string, error)
 	PowerOff()  (error)
 	PowerOn()   (error)
-	GetPowerStatus()(bool)
+	GetPowerStatus()(bool,error)
 }
 
 type BmhPlugin struct {
