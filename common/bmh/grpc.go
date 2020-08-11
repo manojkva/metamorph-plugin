@@ -32,9 +32,13 @@ func (m *GRPCClient) DeployISO() error {
 	_, err := m.client.DeployISO(context.Background(), &proto.Empty{})
 	return err
 }
-func (m *GRPCClient) GetHWInventory() (map[string]string,error) {
+func (m *GRPCClient) GetHWInventory() (map[string]string, error) {
 	hwInfo, err := m.client.GetHWInventory(context.Background(), &proto.Empty{})
-	return hwInfo.MapInfo,err
+	if hwInfo != nil {
+		return hwInfo.MapInfo, err
+	} else {
+		return nil, err
+	}
 }
 func (m *GRPCClient) PowerOff() error {
 	_, err := m.client.PowerOff(context.Background(), &proto.Empty{})
@@ -56,8 +60,8 @@ func (m *GRPCServer) GetGUUID(ctx context.Context, req *proto.Empty) (*proto.Res
 }
 func (m *GRPCServer) GetPowerStatus(ctx context.Context, req *proto.Empty) (*proto.ResponseBool, error) {
 	/* <TBD> Add check for required parameters and raise necessary errors if reqd*/
-	s,err := m.Impl.GetPowerStatus()
-	return &proto.ResponseBool{Status: s},err
+	s, err := m.Impl.GetPowerStatus()
+	return &proto.ResponseBool{Status: s}, err
 }
 func (m *GRPCServer) UpdateFirmware(ctx context.Context, req *proto.Empty) (*proto.Empty, error) {
 	/* <TBD> Add check for required parameters and raise necessary errors if reqd*/
@@ -76,7 +80,7 @@ func (m *GRPCServer) DeployISO(ctx context.Context, req *proto.Empty) (*proto.Em
 }
 func (m *GRPCServer) GetHWInventory(ctx context.Context, req *proto.Empty) (*proto.ResponseMap, error) {
 	/* <TBD> Add check for required parameters and raise necessary errors if reqd*/
-	hwInfo,err := m.Impl.GetHWInventory()
+	hwInfo, err := m.Impl.GetHWInventory()
 	return &proto.ResponseMap{MapInfo: hwInfo}, err
 }
 func (m *GRPCServer) PowerOff(ctx context.Context, req *proto.Empty) (*proto.Empty, error) {
