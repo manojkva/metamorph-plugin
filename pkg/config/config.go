@@ -8,7 +8,6 @@ import (
 )
 
 func init() {
-	//	fmt.Println("Init Func")
 	viper.AutomaticEnv()
 	configPath := viper.GetString("METAMORPH_CONFIGPATH")
 
@@ -17,9 +16,7 @@ func init() {
 		configPath = path.Join(gopathenv, "src/github.com/bm-metamorph/MetaMorph")
 		viper.BindEnv("METAMORPH_CONFIGPATH", configPath)
 	}
-	viper.SetConfigType("yaml")
 	viper.AddConfigPath(configPath)
-	viper.SetEnvPrefix("metamorph")
 	err := viper.ReadInConfig()
 	if err != nil {
 		panic(fmt.Errorf("Fatal error config file: %s \n", err))
